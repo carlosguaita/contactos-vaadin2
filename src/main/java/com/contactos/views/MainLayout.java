@@ -3,6 +3,7 @@ package com.contactos.views;
 import com.contactos.views.detalle.DetalleView;
 import com.contactos.views.listacontactos.ListaContactosView;
 import com.contactos.views.nuevocontacto.NuevoContactoView;
+import com.contactos.views.usuarios.ListaUsuariosView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
@@ -54,9 +55,10 @@ public class MainLayout extends AppLayout {
 
         nav.addItem(new SideNavItem("Lista Contactos", ListaContactosView.class,
                 LineAwesomeIcon.PENCIL_RULER_SOLID.create()));
-        nav.addItem(new SideNavItem("Nuevo Contacto", NuevoContactoView.class,
-                LineAwesomeIcon.PENCIL_RULER_SOLID.create()));
+        //nav.addItem(new SideNavItem("Nuevo Contacto", NuevoContactoView.class,
+        //        LineAwesomeIcon.PENCIL_RULER_SOLID.create()));
         nav.addItem(new SideNavItem("Detalle", DetalleView.class, LineAwesomeIcon.PENCIL_RULER_SOLID.create()));
+        nav.addItem(new SideNavItem("Lista Usuarios", ListaUsuariosView.class, LineAwesomeIcon.USER.create()));
 
         return nav;
     }
